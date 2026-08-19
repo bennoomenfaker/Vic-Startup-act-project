@@ -34,7 +34,7 @@ export const ConversionPipelineSection: React.FC<ConversionPipelineSectionProps>
   // Core metrics for the 85 sessions pipeline
   const pipelineData = {
     candidatures: 3015,
-    directLabels: 1 216,
+    directLabels: 1216,
     preLabels: 623,
     rejected: 1024,
     conversions: 95,

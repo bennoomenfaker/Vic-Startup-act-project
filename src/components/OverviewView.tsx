@@ -282,7 +282,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({ setActiveTab, onSele
                   <span className="text-slate-900 font-bold">1 216 (27.3%)</span>
                 </div>
                 <div className="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
-                  <div className="bg-emerald-500 h-2.5 rounded-full" style={{ width: `${(1 216 / 3015) * 100}%` }}></div>
+                  <div className="bg-emerald-500 h-2.5 rounded-full" style={{ width: `${(1216 / 3015) * 100}%` }}></div>
                 </div>
               </div>
 
