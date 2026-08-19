@@ -188,7 +188,7 @@ export const MobileSidebar: React.FC<MobileSidebarProps> = ({
               <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
               <span>Données 85 PVs</span>
             </span>
-            <p className="text-[11px] text-slate-500 mt-1">1 311 labels, 623 pré-labels et 2 958 dossiers.</p>
+            <p className="text-[11px] text-slate-500 mt-1">1 311 labels, 623 pré-labels et 3 015 dossiers.</p>
           </div>
         </div>
       </div>

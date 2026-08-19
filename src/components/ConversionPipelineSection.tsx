@@ -33,11 +33,11 @@ export const ConversionPipelineSection: React.FC<ConversionPipelineSectionProps>
 
   // Core metrics for the 85 sessions pipeline
   const pipelineData = {
-    candidatures: 2958,
-    directLabels: 809,
+    candidatures: 3015,
+    directLabels: 1 216,
     preLabels: 623,
     rejected: 1024,
-    conversions: 502,
+    conversions: 95,
     preLabelsRemaining: 121,
     totalLabels: 1311,
     retraits: 64,
@@ -66,7 +66,7 @@ export const ConversionPipelineSection: React.FC<ConversionPipelineSectionProps>
             Entonnoir de Conversion des Candidatures en Startups Labellisées
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 font-medium mt-1">
-            Traçabilité intégrale du flux : des <strong>2 958 dossiers examinés</strong> aux <strong>623 pré-labels</strong> et leur conversion vers les <strong>1 311 labels certifiés</strong> (équation 623 − 502 = 121).
+            Traçabilité intégrale du flux : des <strong>3 015 dossiers examinés</strong> aux <strong>623 pré-labels</strong> et leur conversion vers les <strong>1 311 labels certifiés</strong> (équation 623 − 95 = 528).
           </p>
         </div>
 
@@ -146,7 +146,7 @@ export const ConversionPipelineSection: React.FC<ConversionPipelineSectionProps>
               </span>
             </div>
             <div className="text-xl font-black text-slate-900 mt-1">
-              809 <span className="text-xs font-normal text-slate-500">sociétés</span>
+              1 216 <span className="text-xs font-normal text-slate-500">sociétés</span>
             </div>
             <span className="text-[10px] text-slate-400 block mt-0.5">Sociétés déjà créées avant dépôt</span>
           </div>
@@ -207,18 +207,18 @@ export const ConversionPipelineSection: React.FC<ConversionPipelineSectionProps>
                 Conversions en Labels Pleins
               </span>
               <div className={`text-3xl font-black tracking-tight mt-0.5 ${activeStep === 3 ? 'text-white' : 'text-blue-950'}`}>
-                502 <span className="text-sm font-normal text-emerald-600 font-bold">(80.6%)</span>
+                95 <span className="text-sm font-normal text-emerald-600 font-bold">(80.6%)</span>
               </div>
             </div>
 
             {/* Progress bar visual */}
             <div className="space-y-1">
               <div className="w-full bg-slate-200 h-2.5 rounded-full overflow-hidden flex">
-                <div className="bg-emerald-500 h-full" style={{ width: '80.58%' }} title="502 convertis (80.58%)"></div>
+                <div className="bg-emerald-500 h-full" style={{ width: '80.58%' }} title="95 convertis (15.2%)"></div>
                 <div className="bg-amber-400 h-full" style={{ width: '19.42%' }} title="121 restants (19.42%)"></div>
               </div>
               <div className="flex items-center justify-between text-[10px] font-bold text-slate-500">
-                <span className="text-emerald-700">502 Convertis</span>
+                <span className="text-emerald-700">95 Convertis</span>
                 <span className="text-amber-700">121 Solde Restant</span>
               </div>
             </div>
@@ -226,7 +226,7 @@ export const ConversionPipelineSection: React.FC<ConversionPipelineSectionProps>
             <div className={`p-2.5 rounded-xl text-[11px] font-medium leading-tight ${
               activeStep === 3 ? 'bg-white/10 text-blue-100' : 'bg-white text-slate-600 border border-blue-100'
             }`}>
-              <strong>Équation :</strong> 623 Pré-labels − 502 Conversions = <strong>121 Pré-labels</strong> restants en incubation ou échus.
+              <strong>Équation :</strong> 623 Pré-labels − 95 Conversions = <strong>121 Pré-labels</strong> restants en incubation ou échus.
             </div>
           </div>
 
@@ -264,7 +264,7 @@ export const ConversionPipelineSection: React.FC<ConversionPipelineSectionProps>
                 Total Labels Accordés (85 Sessions)
               </span>
               <div className={`text-3xl font-black tracking-tight mt-0.5 ${activeStep === 4 ? 'text-white' : 'text-purple-950'}`}>
-                1 311 <span className="text-xs font-normal text-purple-600 font-bold">(809 + 502)</span>
+                1 311 <span className="text-xs font-normal text-purple-600 font-bold">(1 216 + 95)</span>
               </div>
             </div>
 
@@ -306,7 +306,7 @@ export const ConversionPipelineSection: React.FC<ConversionPipelineSectionProps>
               Synthèse Mathématique de l'Entonnoir
             </span>
             <p className="text-xs sm:text-sm font-bold text-white mt-0.5">
-              1 311 Labels = 809 Voie Directe (61.7%) + 502 Conversions de Pré-Labels (38.3% à 80.58% d'efficience)
+              1 311 Labels = 1 216 Voie Directe (61.7%) + 95 Conversions de Pré-Labels (38.3% à 80.58% d'efficience)
             </p>
           </div>
         </div>

@@ -360,7 +360,7 @@ export const MultiTourTemporalAnalytics: React.FC = () => {
                 <span>Saisonnalité Mensuelle Historique (Janvier à Décembre)</span>
               </h3>
               <p className="text-xs text-slate-500 mt-0.5">
-                Cumul des 2 958 candidatures et 1 311 labels par mois de l'année (2019-2026).
+                Cumul des 3 015 candidatures et 1 311 labels par mois de l'année (2019-2026).
               </p>
             </div>
           </div>

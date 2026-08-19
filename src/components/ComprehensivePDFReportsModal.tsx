@@ -77,7 +77,7 @@ export const ComprehensivePDFReportsModal: React.FC<ComprehensivePDFReportsModal
       title: 'Rapport National Complet & Synthèse Exécutive',
       badge: 'Document Maître (85 Sessions)',
       badgeColor: 'bg-indigo-100 text-indigo-900 border-indigo-200',
-      desc: 'Bilan institutionnel exhaustif des 85 sessions du Startup Act (2019 — 2026) : 2 958 candidatures, 1 311 labels, 623 pré-labels, pipeline de conversion et dynamique de croissance.',
+      desc: 'Bilan institutionnel exhaustif des 85 sessions du Startup Act (2019 — 2026) : 3 015 candidatures, 1 311 labels, 623 pré-labels, pipeline de conversion et dynamique de croissance.',
       icon: ShieldCheck,
     },
     {
@@ -109,7 +109,7 @@ export const ComprehensivePDFReportsModal: React.FC<ComprehensivePDFReportsModal
       title: 'Registre Exhaustif & PVs des 85 Sessions (2019 — 2026)',
       badge: 'Archive Complète 85 PVs',
       badgeColor: 'bg-indigo-100 text-indigo-900 border-indigo-200',
-      desc: 'Catalogue exhaustif et scellé de toutes les 85 sessions sans exception : métriques unitaires, 2 958 candidatures consolidées, conversions et traçabilité d\'audit.',
+      desc: 'Catalogue exhaustif et scellé de toutes les 85 sessions sans exception : métriques unitaires, 3 015 candidatures consolidées, conversions et traçabilité d\'audit.',
       icon: ShieldCheck,
     },
     {
@@ -131,9 +131,9 @@ export const ComprehensivePDFReportsModal: React.FC<ComprehensivePDFReportsModal
     {
       id: 'sector_funnel' as ReportType,
       title: 'Rapport Sectoriel & Funnel de Conversion',
-      badge: 'Pipeline 2958 ➔ 1311',
+      badge: 'Pipeline 3015 ➔ 1311',
       badgeColor: 'bg-blue-100 text-blue-900 border-blue-200',
-      desc: 'Étude des 10 verticales sectorielles, de la règle des -502=121 (80.58% de conversion pré-label en label) et des taux de rejet sectoriels (SEL-08).',
+      desc: 'Étude des 10 verticales sectorielles, de la règle des -95=528 (80.58% de conversion pré-label en label) et des taux de rejet sectoriels (SEL-08).',
       icon: Layers,
     },
     {
@@ -217,7 +217,7 @@ export const ComprehensivePDFReportsModal: React.FC<ComprehensivePDFReportsModal
         doc.text(`• Candidatures Totales Examinées : ${formatNumber(META_DATA.totalCandidatures)}`, 18, currentY + 16);
         doc.text(`• Total des Labels Accordés : ${formatNumber(META_DATA.totalLabels)} (dont ${formatNumber(META_DATA.totalNewLabels)} directs)`, 18, currentY + 22);
         doc.text(`• Pré-Labels Accordés : ${formatNumber(META_DATA.totalPreLabels)} (${META_DATA.totalConversions} convertis en labels, ${META_DATA.preLabelsRestants} actifs)`, 18, currentY + 28);
-        doc.text(`• Taux de Conversion Pré-Label ➔ Label : ${META_DATA.conversionRatePct}% (Règle -502 = 121)`, 105, currentY + 16);
+        doc.text(`• Taux de Conversion Pré-Label ➔ Label : ${META_DATA.conversionRatePct}% (Règle -95 = 528)`, 105, currentY + 16);
         doc.text(`• Taux d'Acceptation Global : ${META_DATA.tauxMoyenPct}%`, 105, currentY + 22);
         doc.text(`• Startups Enregistrées : ${formatNumber(META_DATA.uniqueStartupsCount)} | Fondateurs : ${formatNumber(META_DATA.uniqueFoundersCount)}`, 105, currentY + 28);
 
@@ -235,8 +235,8 @@ export const ComprehensivePDFReportsModal: React.FC<ComprehensivePDFReportsModal
         doc.setTextColor(71, 85, 105);
         const synthText = [
           "Le dispositif Startup Act institué en Tunisie représente le cadre de référence pour l'identification, la qualification et le soutien aux entreprises innovantes à fort potentiel de croissance.",
-          "Sur les 85 sessions instruites entre mars 2019 et mars 2026, 2 958 dossiers ont été analysés, aboutissant à l'octroi de 1 311 labels (taux d'acceptation de 44.3%) et 623 pré-labels.",
-          "Le mécanisme de passage du pré-label au label plein démontre une remarquable efficacité opérationnelle avec 502 conversions effectives, attestant d'un taux de concrétisation de 80.58%."
+          "Sur les 85 sessions instruites entre mars 2019 et mars 2026, 3 015 dossiers ont été analysés, aboutissant à l'octroi de 1 311 labels (taux d'acceptation de 43.5%) et 623 pré-labels.",
+          "Le mécanisme de passage du pré-label au label plein démontre une remarquable efficacité opérationnelle avec 95 conversions effectives, attestant d'un taux de concrétisation de 80.58%."
         ];
         synthText.forEach(line => {
           const split = doc.splitTextToSize(line, 182);
@@ -473,8 +473,8 @@ export const ComprehensivePDFReportsModal: React.FC<ComprehensivePDFReportsModal
         doc.setFontSize(9);
         doc.setTextColor(51, 65, 85);
         doc.text('• Sessions Couvertes : 85 sessions sans discontinuité (Mars 2019 à Mars 2026)', 18, currentY + 14);
-        doc.text('• Volume Total : 2 958 candidatures | 1 311 labels | 623 pré-labels | 502 conversions', 18, currentY + 20);
-        doc.text('• Formule Fondamentale : 623 Pré-Labels − 502 Conversions = 121 Restants (80.58%)', 18, currentY + 25);
+        doc.text('• Volume Total : 3 015 candidatures | 1 311 labels | 623 pré-labels | 95 conversions', 18, currentY + 20);
+        doc.text('• Formule Fondamentale : 623 Pré-Labels − 95 Conversions = 528 Restants (80.58%)', 18, currentY + 25);
 
         currentY += 34;
 
@@ -853,7 +853,7 @@ export const ComprehensivePDFReportsModal: React.FC<ComprehensivePDFReportsModal
                       1. Synthèse Globale & Pipeline de Conversion
                     </h4>
                     <p className="text-slate-600 leading-relaxed text-[11px]">
-                      Sur un cumul de 2 958 candidatures examinées lors des 85 sessions officielles, 1 311 avis favorables (Labels) ont été accordés, correspondant à un taux d'acceptation de 44.32%. Le pipeline de passage du pré-label au label plein enregistre 502 conversions réussies sur 623 pré-labels émis, soit un taux de conversion certifié de 80.58% (Règle des -502 = 121).
+                      Sur un cumul de 3 015 candidatures examinées lors des 85 sessions officielles, 1 311 avis favorables (Labels) ont été accordés, correspondant à un taux d'acceptation de 43.48%. Le pipeline de passage du pré-label au label plein enregistre 95 conversions réussies sur 623 pré-labels émis, soit un taux de conversion certifié de 15.2% (95 conversions).
                     </p>
                   </div>
 
@@ -1043,11 +1043,11 @@ export const ComprehensivePDFReportsModal: React.FC<ComprehensivePDFReportsModal
                   <div className="grid grid-cols-4 gap-2 bg-indigo-50/60 p-3 rounded-xl border border-indigo-200 text-center">
                     <div>
                       <div className="text-[9px] font-bold text-indigo-800 uppercase">85 Sessions</div>
-                      <div className="text-sm font-black text-indigo-950 mt-0.5">2 958 Cand.</div>
+                      <div className="text-sm font-black text-indigo-950 mt-0.5">3 015 Cand.</div>
                     </div>
                     <div>
                       <div className="text-[9px] font-bold text-emerald-800 uppercase">Labels Total</div>
-                      <div className="text-sm font-black text-emerald-800 mt-0.5">1 311 (44.3%)</div>
+                      <div className="text-sm font-black text-emerald-800 mt-0.5">1 311 (43.5%)</div>
                     </div>
                     <div>
                       <div className="text-[9px] font-bold text-purple-800 uppercase">Pré-Labels</div>
@@ -1055,7 +1055,7 @@ export const ComprehensivePDFReportsModal: React.FC<ComprehensivePDFReportsModal
                     </div>
                     <div>
                       <div className="text-[9px] font-bold text-amber-800 uppercase">Conversions</div>
-                      <div className="text-sm font-black text-amber-800 mt-0.5">502 (80.6%)</div>
+                      <div className="text-sm font-black text-amber-800 mt-0.5">95 (15.2%)</div>
                     </div>
                   </div>
 

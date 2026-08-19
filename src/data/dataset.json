@@ -1,21 +1,21 @@
 {
   "meta": {
     "nbSessions": 85,
-    "totalCandidatures": 2958,
+    "totalCandidatures": 3015,
     "totalLabels": 1311,
-    "totalNewLabels": 809,
+    "totalNewLabels": 1216,
     "totalPreLabels": 623,
-    "totalConversions": 502,
-    "preLabelsRestants": 121,
-    "totalRetraits": 140,
-    "tauxMoyenPct": 44.3,
-    "conversionRatePct": 80.6,
+    "totalConversions": 95,
+    "preLabelsRestants": 528,
+    "totalRetraits": 20,
+    "tauxMoyenPct": 43.5,
+    "conversionRatePct": 15.2,
     "uniqueStartupsCount": 2630,
     "uniqueFoundersCount": 4764,
     "correctedSessionsCount": 21,
     "firstSession": "03/2019",
     "lastSession": "03/2026",
-    "verifiedDate": "2026-08-18"
+    "verifiedDate": "2026-08-19"
   },
   "yearlyStats": [
     {
@@ -89623,4 +89623,6 @@
         "Healthtech"
       ],
       "isLabellise": true
-   
+    }
+  ]
+}

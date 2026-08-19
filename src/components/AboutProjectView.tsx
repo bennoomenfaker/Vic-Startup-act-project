@@ -56,7 +56,7 @@ export const AboutProjectView: React.FC<AboutProjectViewProps> = ({ setActiveTab
             </h1>
 
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Projet universitaire et analytique dédié à l'extraction, la vérification unitaire et la valorisation interactive des <strong>85 procès-verbaux officiels</strong> du Collège des Startups (Mars 2019 — Mars 2026), réconciliant le total authentique de <strong>1 311 labels</strong>, <strong>623 pré-labels</strong> et <strong>2 958 candidatures</strong>.
+              Projet universitaire et analytique dédié à l'extraction, la vérification unitaire et la valorisation interactive des <strong>85 procès-verbaux officiels</strong> du Collège des Startups (Mars 2019 — Mars 2026), réconciliant le total authentique de <strong>1 311 labels</strong>, <strong>623 pré-labels</strong> et <strong>3 015 candidatures</strong>.
             </p>
           </div>
 
@@ -90,7 +90,7 @@ export const AboutProjectView: React.FC<AboutProjectViewProps> = ({ setActiveTab
         <div className="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-soft text-center">
           <span className="text-xs font-bold text-slate-400 block uppercase">Labels Accordés</span>
           <span className="text-2xl sm:text-3xl font-extrabold text-purple-700 mt-1 block">1 311</span>
-          <span className="text-[11px] text-purple-600 font-semibold">809 directs + 502 conv.</span>
+          <span className="text-[11px] text-purple-600 font-semibold">1 216 directs + 95 conv.</span>
         </div>
 
         <div className="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-soft text-center">
@@ -101,8 +101,8 @@ export const AboutProjectView: React.FC<AboutProjectViewProps> = ({ setActiveTab
 
         <div className="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-soft text-center">
           <span className="text-xs font-bold text-slate-400 block uppercase">Candidatures Évaluées</span>
-          <span className="text-2xl sm:text-3xl font-extrabold text-emerald-700 mt-1 block">2 958</span>
-          <span className="text-[11px] text-emerald-600 font-semibold">44.3% taux de succès</span>
+          <span className="text-2xl sm:text-3xl font-extrabold text-emerald-700 mt-1 block">3 015</span>
+          <span className="text-[11px] text-emerald-600 font-semibold">43.5% taux de succès</span>
         </div>
       </div>
 
@@ -173,7 +173,7 @@ export const AboutProjectView: React.FC<AboutProjectViewProps> = ({ setActiveTab
 
                 <div className="p-2.5 rounded-xl bg-white border border-indigo-100/80">
                   <span className="font-bold text-emerald-700 block">3. La Conversion</span>
-                  <span className="text-[11px] text-slate-500">Passage réussi d'un Pré-label à un Label plein après immatriculation (502 cas).</span>
+                  <span className="text-[11px] text-slate-500">Passage réussi d'un Pré-label à un Label plein après immatriculation (95 cas).</span>
                 </div>
               </div>
             </div>

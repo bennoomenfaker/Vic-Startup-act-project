@@ -458,7 +458,7 @@ export const NeostateDashboardView: React.FC<NeostateDashboardViewProps> = ({
         </div>
       </div>
 
-      {/* 2b. Secondary Interactive Funnel Bar & Equation 623 - 502 = 121 */}
+      {/* 2b. Secondary Interactive Funnel Bar & Equation 623 - 95 = 528 */}
       <div className="p-4 sm:p-5 rounded-3xl bg-slate-900 text-white shadow-soft-lg flex flex-col lg:flex-row lg:items-center justify-between gap-4">
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10 rounded-2xl bg-indigo-600/40 border border-indigo-400/40 text-indigo-300 flex items-center justify-center font-black text-sm shrink-0">
@@ -469,7 +469,7 @@ export const NeostateDashboardView: React.FC<NeostateDashboardViewProps> = ({
               Entonnoir & Parcours de Labellisation ({selectedYear === 'all' ? '85 Sessions' : selectedYear})
             </span>
             <h4 className="text-xs sm:text-sm font-bold text-white mt-0.5">
-              623 Pré-Labels − 502 Conversions = 121 Pré-Labels Restants (80.6% Taux de Conversion)
+              623 Pré-Labels − 95 Conversions = 528 Pré-Labels Restants (80.6% Taux de Conversion)
             </h4>
           </div>
         </div>
@@ -478,9 +478,9 @@ export const NeostateDashboardView: React.FC<NeostateDashboardViewProps> = ({
           <button
             onClick={() => handleOpenKPIByCode('VOL-05')}
             className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-indigo-200 hover:text-white text-xs font-bold transition-colors cursor-pointer flex items-center space-x-1.5"
-            title="Voir calcul Conversions (502)"
+            title="Voir calcul Conversions (95)"
           >
-            <span>502 Conversions</span>
+            <span>95 Conversions</span>
             <ArrowRight className="w-3 h-3" />
           </button>
 
@@ -529,7 +529,7 @@ export const NeostateDashboardView: React.FC<NeostateDashboardViewProps> = ({
         </div>
       </div>
 
-      {/* 2.5 Conversion Pipeline Funnel (2 958 -> Pre-labels 623 -> 502 Conversions 80.58% -> 1 311 Labels) */}
+      {/* 2.5 Conversion Pipeline Funnel (3 015 -> Pre-labels 623 -> 95 Conversions 80.58% -> 1 311 Labels) */}
       <ConversionPipelineSection 
         onOpenKPIByCode={handleOpenKPIByCode}
         selectedYear={selectedYear}
@@ -1133,7 +1133,7 @@ export const NeostateDashboardView: React.FC<NeostateDashboardViewProps> = ({
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-900 truncate">502 Conversions</span>
+                    <span className="text-xs font-bold text-slate-900 truncate">95 Conversions</span>
                     <span className="text-[10px] text-slate-400 shrink-0">Total</span>
                   </div>
                   <p className="text-[11px] text-slate-500 mt-0.5">Passage réussi du pré-label au label plein.</p>

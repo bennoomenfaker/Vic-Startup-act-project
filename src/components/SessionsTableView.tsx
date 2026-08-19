@@ -585,7 +585,7 @@ export const SessionsTableView: React.FC<SessionsTableViewProps> = ({
                 <td className="py-3 px-3 text-right text-rose-300">{formatNumber(totals.retraits)}</td>
                 <td className="py-3 px-3 text-right text-emerald-300">{totals.avgRate}%</td>
                 <td className="py-3 px-3 text-center"></td>
-                <td className="py-3 px-3 text-[11px] text-slate-400">809 directs + 502 conversions</td>
+                <td className="py-3 px-3 text-[11px] text-slate-400">1 216 directs + 95 conversions</td>
                 <td className="py-3 px-3"></td>
               </tr>
             </tfoot>

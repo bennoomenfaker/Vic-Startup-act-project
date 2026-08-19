@@ -113,7 +113,7 @@ export const DocumentsPvsView: React.FC<DocumentsPvsViewProps> = ({
 
         <div className="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-soft text-center">
           <span className="text-xs font-bold text-slate-400 block uppercase">Dossiers Nominatifs</span>
-          <span className="text-2xl font-extrabold text-purple-700 mt-1 block">2 958</span>
+          <span className="text-2xl font-extrabold text-purple-700 mt-1 block">3 015</span>
           <span className="text-[11px] text-purple-600 font-semibold">Candidatures examinées</span>
         </div>
 
@@ -242,7 +242,7 @@ export const DocumentsPvsView: React.FC<DocumentsPvsViewProps> = ({
                 Registre des 85 Sessions
               </h3>
               <p className="text-xs text-slate-300 mt-1 font-medium leading-relaxed">
-                2 958 candidatures, 1 311 labels, règle des -502=121 et 21 PVs rectifiés après audit.
+                3 015 candidatures, 1 311 labels, 95 conversions, 20 retraits et 21 PVs rectifiés après audit.
               </p>
             </div>
             <div className="pt-2 border-t border-slate-800 flex items-center gap-2">

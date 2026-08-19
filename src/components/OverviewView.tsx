@@ -112,7 +112,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({ setActiveTab, onSele
             Bilan des 85 Sessions Officielles (Mars 2019 — Mars 2026)
           </h1>
           <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-3xl leading-relaxed">
-            Consolidation et audit rigoureux des 85 procès-verbaux du Collège des Startups : <strong className="text-white">1 311 labels accordés</strong> (dont 502 conversions de pré-labels), <strong className="text-white">623 pré-labels</strong>, et <strong className="text-white">2 958 candidatures</strong> traitées.
+            Consolidation et audit rigoureux des 85 procès-verbaux du Collège des Startups : <strong className="text-white">1 311 labels accordés</strong> (dont 95 conversions de pré-labels), <strong className="text-white">623 pré-labels</strong>, et <strong className="text-white">3 015 candidatures</strong> traitées.
           </p>
         </div>
 
@@ -268,7 +268,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({ setActiveTab, onSele
               <div>
                 <div className="flex justify-between text-xs font-medium mb-1">
                   <span className="text-slate-700 font-semibold">1. Candidatures Déposées</span>
-                  <span className="text-slate-900 font-bold">2 958 (100%)</span>
+                  <span className="text-slate-900 font-bold">3 015 (100%)</span>
                 </div>
                 <div className="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
                   <div className="bg-blue-500 h-2.5 rounded-full" style={{ width: '100%' }}></div>
@@ -279,10 +279,10 @@ export const OverviewView: React.FC<OverviewViewProps> = ({ setActiveTab, onSele
               <div>
                 <div className="flex justify-between text-xs font-medium mb-1">
                   <span className="text-emerald-700 font-semibold">2. Labels Accordés Directement</span>
-                  <span className="text-slate-900 font-bold">809 (27.3%)</span>
+                  <span className="text-slate-900 font-bold">1 216 (27.3%)</span>
                 </div>
                 <div className="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
-                  <div className="bg-emerald-500 h-2.5 rounded-full" style={{ width: `${(809 / 2958) * 100}%` }}></div>
+                  <div className="bg-emerald-500 h-2.5 rounded-full" style={{ width: `${(1 216 / 3015) * 100}%` }}></div>
                 </div>
               </div>
 
@@ -293,7 +293,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({ setActiveTab, onSele
                   <span className="text-slate-900 font-bold">623 (21.1%)</span>
                 </div>
                 <div className="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
-                  <div className="bg-indigo-500 h-2.5 rounded-full" style={{ width: `${(623 / 2958) * 100}%` }}></div>
+                  <div className="bg-indigo-500 h-2.5 rounded-full" style={{ width: `${(623 / 3015) * 100}%` }}></div>
                 </div>
               </div>
 
@@ -301,10 +301,10 @@ export const OverviewView: React.FC<OverviewViewProps> = ({ setActiveTab, onSele
               <div>
                 <div className="flex justify-between text-xs font-medium mb-1">
                   <span className="text-purple-700 font-semibold">4. Pré-Labels Convertis en Labels</span>
-                  <span className="text-slate-900 font-bold">502 (80.6% de conv.)</span>
+                  <span className="text-slate-900 font-bold">95 (15.2% de conv.)</span>
                 </div>
                 <div className="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
-                  <div className="bg-purple-500 h-2.5 rounded-full" style={{ width: `${(502 / 623) * 100}%` }}></div>
+                  <div className="bg-purple-500 h-2.5 rounded-full" style={{ width: `${(95 / 623) * 100}%` }}></div>
                 </div>
               </div>
 
@@ -327,7 +327,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({ setActiveTab, onSele
               <div>
                 <strong className="font-semibold text-emerald-950">Total Global Labellisées :</strong>
                 <p className="text-emerald-800 mt-0.5">
-                  809 (nouveaux) + 502 (convertis) = <strong>1 311 labels officiels</strong> au 03/2026.
+                  1 216 (nouveaux) + 95 (convertis) = <strong>1 311 labels officiels</strong> au 03/2026.
                 </p>
               </div>
             </div>

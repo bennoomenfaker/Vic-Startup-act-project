@@ -166,7 +166,7 @@ export const KPICatalogView: React.FC<KPICatalogViewProps> = ({
         </div>
       </div>
 
-      {/* 2. Funnel Focus Highlight Card (-502=121 Equation) */}
+      {/* 2. Funnel Focus Highlight Card (-95=528 Equation) */}
       <div className="bg-gradient-to-r from-purple-50 via-indigo-50 to-blue-50 border border-indigo-100 rounded-3xl p-5 sm:p-6 shadow-soft">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex items-start space-x-3.5">
@@ -178,10 +178,10 @@ export const KPICatalogView: React.FC<KPICatalogViewProps> = ({
                 Équation Centrale du Parcours de Labellisation
               </span>
               <h3 className="text-base sm:text-lg font-black text-slate-900 mt-0.5">
-                623 Pré-Labels − 502 Conversions = 121 Pré-Labels Restants (80.6% Taux de Conversion)
+                623 Pré-Labels − 95 Conversions = 528 Pré-Labels Restants (80.6% Taux de Conversion)
               </h3>
               <p className="text-xs text-slate-600 mt-1 font-medium">
-                Le total officiel de <strong>1 311 labels</strong> se décompose mathématiquement en <strong>809 labels directs</strong> + <strong>502 conversions</strong> de pré-labels après immatriculation juridique.
+                Le total officiel de <strong>1 311 labels</strong> se décompose mathématiquement en <strong>1 216 labels directs</strong> + <strong>95 conversions</strong> de pré-labels après immatriculation juridique.
               </p>
             </div>
           </div>

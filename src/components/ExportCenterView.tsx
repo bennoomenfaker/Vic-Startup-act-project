@@ -213,8 +213,8 @@ export const ExportCenterView: React.FC = () => {
         });
       });
     });
-    exportToExcel([{ sheetName: 'Toutes Candidatures', data: allDossiers }], 'startup_act_toutes_candidatures_2958.xlsx');
-    triggerSuccess("2 958 candidatures exportées en Excel !");
+    exportToExcel([{ sheetName: 'Toutes Candidatures', data: allDossiers }], 'startup_act_toutes_candidatures_3015.xlsx');
+    triggerSuccess("3 015 candidatures exportées en Excel !");
   };
 
   const handleExportAllCandidaturesJSON = () => {
@@ -233,8 +233,8 @@ export const ExportCenterView: React.FC = () => {
         });
       });
     });
-    exportToJSON(allDossiers, 'startup_act_toutes_candidatures_2958.json');
-    triggerSuccess("2 958 candidatures exportées en JSON !");
+    exportToJSON(allDossiers, 'startup_act_toutes_candidatures_3015.json');
+    triggerSuccess("3 015 candidatures exportées en JSON !");
   };
 
   // Single session exports
@@ -280,7 +280,7 @@ export const ExportCenterView: React.FC = () => {
               Exportez Toutes les Données, Tables Genrées, SQL & Rapports PDF
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed">
-              Téléchargez les 85 sessions, 1 311 labels, 623 pré-labels, 2 958 candidatures, les 4 764 fondateurs (avec ventilation Femmes/Hommes), le catalogue des 50 KPIs et générez des rapports PDF imprimables conformes au format institutionnel A4.
+              Téléchargez les 85 sessions, 1 311 labels, 623 pré-labels, 3 015 candidatures, les 4 764 fondateurs (avec ventilation Femmes/Hommes), le catalogue des 50 KPIs et générez des rapports PDF imprimables conformes au format institutionnel A4.
             </p>
           </div>
 
@@ -352,7 +352,7 @@ export const ExportCenterView: React.FC = () => {
                 </span>
               </div>
               <p className="text-[11px] text-slate-600 mt-2 leading-relaxed">
-                Bilan exécutif consolidé : 2 958 candidatures, 1 311 labels, 623 pré-labels, conversions (-502=121) et évolution annuelle 2019-2026.
+                Bilan exécutif consolidé : 3 015 candidatures, 1 311 labels, 623 pré-labels, conversions (-95=528) et évolution annuelle 2019-2026.
               </p>
             </div>
             <button
@@ -585,12 +585,12 @@ export const ExportCenterView: React.FC = () => {
             </div>
           </div>
 
-          {/* Table 6: 2958 Candidatures */}
+          {/* Table 6: 3015 Candidatures */}
           <div className="p-4.5 rounded-2xl border border-slate-200 bg-slate-50/60 hover:bg-slate-50 transition-colors flex flex-col justify-between space-y-3">
             <div>
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold text-slate-900">Toutes Candidatures Détaillées</span>
-                <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-teal-100 text-teal-800">2 958 dossiers</span>
+                <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-teal-100 text-teal-800">3 015 dossiers</span>
               </div>
               <p className="text-[11px] text-slate-500 mt-1">
                 Tous les dossiers individuels examinés par le Collège avec décisions.

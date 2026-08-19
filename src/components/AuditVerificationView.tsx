@@ -106,7 +106,7 @@ export const AuditVerificationView: React.FC<AuditVerificationViewProps> = ({ on
                 Démonstration : Pourquoi 1 324 vs 1 311 Labels Réels ?
               </h1>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
-                Explication exhaustive de l'écart historique de <strong>13 labels</strong> entre les scrapings automatisés bruts (1 324) et la vérité terrain recomptée sur les 85 PVs officiels signés par le Collège des Startups (<strong>1 311 labels</strong>, <strong>623 pré-labels</strong> et <strong>2 958 candidatures</strong>).
+                Explication exhaustive de l'écart historique de <strong>13 labels</strong> entre les scrapings automatisés bruts (1 324) et la vérité terrain recomptée sur les 85 PVs officiels signés par le Collège des Startups (<strong>1 311 labels</strong>, <strong>623 pré-labels</strong> et <strong>3 015 candidatures</strong>).
               </p>
             </div>
           </div>
@@ -197,11 +197,11 @@ export const AuditVerificationView: React.FC<AuditVerificationViewProps> = ({ on
           <div className="space-y-1.5 pt-3 border-t border-emerald-200/80 text-xs text-emerald-900">
             <div className="flex items-center justify-between">
               <span>• Labels directs accordés aux sociétés :</span>
-              <span className="font-bold text-emerald-800">809 labels</span>
+              <span className="font-bold text-emerald-800">1 216 labels</span>
             </div>
             <div className="flex items-center justify-between">
               <span>• Conversions effectives pré-label → label :</span>
-              <span className="font-bold text-emerald-800">502 labels</span>
+              <span className="font-bold text-emerald-800">95 labels</span>
             </div>
             <div className="flex items-center justify-between">
               <span>• Total Pré-labels accordés :</span>
@@ -209,7 +209,7 @@ export const AuditVerificationView: React.FC<AuditVerificationViewProps> = ({ on
             </div>
             <div className="flex items-center justify-between">
               <span>• Candidatures totales réconciliées :</span>
-              <span className="font-bold text-emerald-800">2 958 dossiers (44.3%)</span>
+              <span className="font-bold text-emerald-800">3 015 dossiers (43.5%)</span>
             </div>
           </div>
         </div>
@@ -570,7 +570,7 @@ export const AuditVerificationView: React.FC<AuditVerificationViewProps> = ({ on
               <span className="text-xs font-bold text-emerald-800 block">3. manual_sessions (Audit)</span>
               <div className="text-xl font-bold text-emerald-700 mt-1">1 311 Labels (100%)</div>
               <p className="text-[11px] text-emerald-800 mt-1 leading-snug">
-                Base réconciliée définitive certifiée conforme aux 85 PVs ministériels signés (809 directs + 502 conversions).
+                Base réconciliée définitive certifiée conforme aux 85 PVs ministériels signés (1 216 directs + 95 conversions).
               </p>
             </div>
           </div>

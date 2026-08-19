@@ -207,7 +207,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </div>
             <h4 className="text-xs font-bold text-slate-900">Données Certifiées</h4>
             <p className="text-[11px] text-slate-500 mt-0.5 leading-snug">
-              85 PVs vérifiés : 1 311 labels, 623 pré-labels et 2 958 dossiers.
+              85 PVs vérifiés : 1 311 labels, 623 pré-labels et 3 015 dossiers.
             </p>
             <button
               onClick={() => setActiveTab('export_center')}
