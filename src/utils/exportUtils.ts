@@ -74,7 +74,7 @@ export function generateCompleteSQL(dataset: StartupActDataset): string {
   lines.push(`-- =========================================================================`);
   lines.push(`-- STARTUP ACT TUNISIE (2019 - 2026) - BASE DE DONNÉES COMPLÈTE & CERTIFIÉE`);
   lines.push(`-- Généré le : ${new Date().toISOString()}`);
-  lines.push(`-- Métriques Officielles : 85 Sessions, 1 311 Labels, 623 Pré-labels, 2 958 Candidatures`);
+  lines.push(`-- Métriques Officielles : 85 Sessions, 1 311 Labels, 623 Pré-labels, 3 015 Candidatures`);
   lines.push(`-- Démographie : 4 764 Fondateurs (1 153 Femmes, 3 611 Hommes)`);
   lines.push(`-- =========================================================================\n`);
 
@@ -432,7 +432,7 @@ export function exportAllDataExcel(dataset: StartupActDataset) {
     'Secteurs': f.secteurs.join(', ')
   }));
 
-  // Sheet 7: Toutes les Candidatures Détaillées (2958)
+  // Sheet 7: Toutes les Candidatures Détaillées (3015)
   const allDossiersData: any[] = [];
   dataset.sessions.forEach(s => {
     s.entries.forEach(e => {
