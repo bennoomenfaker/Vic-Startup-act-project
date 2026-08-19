@@ -1,0 +1,6 @@
+{
+  "name": "Tunisia Startup Act - Dashboard 85 Sessions",
+  "description": "Dashboard analytique complet des 85 sessions du Collège des Startups (Startup Act Tunisie) : 1 311 labels, 623 pré-labels, analyse multi-tours (1er-3e tour), catalogue des 50 KPIs, 85 PVs audités, générateur de rapports PDF et export multi-formats.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
