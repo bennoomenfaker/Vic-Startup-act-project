@@ -889,6 +889,61 @@ export const ExportCenterView: React.FC = () => {
               </button>
             </div>
           </div>
+          {/* Résumé Quantitatif PDF/DOCX */}
+          <div className="p-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 transition-colors flex flex-col justify-between space-y-3">
+            <div>
+              <span className="text-xs font-bold text-slate-900">Résumé Quantitatif 85 Sessions</span>
+              <p className="text-[11px] text-slate-500 mt-1">Détail par session : labels, prélabels, 2e tour, après pitching, retraits. Données contrôlées.</p>
+            </div>
+            <div className="flex space-x-2">
+              <a href="/data/rapport/resume_quantitatif_startup_act_85_sessions.pdf" download className="flex-1 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-bold flex items-center justify-center space-x-1 cursor-pointer shadow-2xs">
+                <Download className="w-3.5 h-3.5" /><span>PDF</span>
+              </a>
+              <a href="/data/rapport/resume_quantitatif_startup_act_85_sessions.docx" download className="flex-1 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold flex items-center justify-center space-x-1 cursor-pointer shadow-2xs">
+                <Download className="w-3.5 h-3.5" /><span>DOCX</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Mémoire VIC Chapitres */}
+          <div className="p-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 transition-colors flex flex-col justify-between space-y-3">
+            <div>
+              <span className="text-xs font-bold text-slate-900">Mémoire VIC — Chapitres</span>
+              <p className="text-[11px] text-slate-500 mt-1">10 chapitres : Cover, Intro, Méthodologie, Résultats, Discussion, Conclusion, Annexes, Biblio, Axes, Veille</p>
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {['00_cover_page','01_introduction','02_methodologie','03_resultats','04_discussion','05_conclusion','06_annexes','07_bibliographie','08_axes','09_plan_veille_AE1_priorise'].map(name => (
+                <a
+                  key={name}
+                  href={`/data/rapport/${name}.md`}
+                  download
+                  className="px-2 py-1 bg-slate-600 hover:bg-slate-700 text-white rounded-lg text-[10px] font-bold transition-colors cursor-pointer"
+                >
+                  {name.substring(3).replace(/_/g,' ')}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Figures du rapport (5 PNG) */}
+          <div className="p-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 transition-colors flex flex-col justify-between space-y-3">
+            <div>
+              <span className="text-xs font-bold text-slate-900">Figures du Rapport (5 PNG)</span>
+              <p className="text-[11px] text-slate-500 mt-1">Évolution annuelle, taux, saisonnalité, secteurs, géographie. Haute résolution.</p>
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {[1,2,3,4,5].map(i => (
+                <a
+                  key={i}
+                  href={`/data/rapport/0${i}_${['evolution_annuelle','taux_annuel','saisonnalite','secteurs','geographie_2019_2021'][i-1]}.png`}
+                  download
+                  className="px-2 py-1 bg-sky-600 hover:bg-sky-700 text-white rounded-lg text-[10px] font-bold transition-colors cursor-pointer"
+                >
+                  Fig.{i}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
