@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: startup-act-dashboard
+    name: vic-startup-act-analytics
     runtime: node
     buildCommand: npm install && npm run build
     startCommand: node server.cjs
@@ -8,3 +8,5 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: PORT
+        value: 3001
