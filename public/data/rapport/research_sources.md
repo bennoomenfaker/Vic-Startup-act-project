@@ -32,7 +32,7 @@
    - Parcours : VIC 2026 en cours, DDS 2025 ESSECT Tunis, IGP 2024 ISIMS Sfax, Licence Informatique de Gestion 2023 ESSECT Montfleury.
 
 6. Corrections — https://github.com/bennoomenfaker/vic-2026-startup-act/blob/main/corrections.md
-   - Le dépôt indique 85/85 sessions vérifiées, 82 par parser v7 + audit indépendant freebuff et 3 scans vectoriels confirmés manuellement.
+   - Le dépôt indique 85/85 sessions vérifiées, 82 par parser v7 + audit indépendant et 3 scans vectoriels confirmés manuellement.
    - Totaux corrigés déclarés : 1 311 Labels et 623 Prélabels.
    - Totaux avant correction déclarés : 1 324 Labels et 617 Prélabels.
    - Le dépôt signale 21 sessions corrigées et stocke les taux exacts et arrondis.

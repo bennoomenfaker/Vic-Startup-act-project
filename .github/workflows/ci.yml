@@ -39,7 +39,8 @@ jobs:
           const fs = require('fs');
           const d = JSON.parse(fs.readFileSync('src/data/dataset.json', 'utf8'));
           console.log('Sessions:', d.sessions.length);
-          console.log('Entries:', d.entries.length);
+          console.log('Startups:', d.startups ? d.startups.length : 'N/A');
+          console.log('Founders:', d.founders ? d.founders.length : 'N/A');
           console.log('Labels:', d.meta.totalLabels);
           console.log('PreLabels:', d.meta.totalPreLabels);
           console.log('Candidatures:', d.meta.totalCandidatures);
