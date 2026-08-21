@@ -1,0 +1,53 @@
+name: CI — Build & Validate
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build & Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Verify build output
+        run: test -f dist/index.html
+
+      - name: JSON data files parse
+        run: |
+          node -e "
+          const fs = require('fs');
+          const d = JSON.parse(fs.readFileSync('src/data/dataset.json', 'utf8'));
+          console.log('Sessions:', d.sessions.length);
+          console.log('Entries:', d.entries.length);
+          console.log('Labels:', d.meta.totalLabels);
+          console.log('PreLabels:', d.meta.totalPreLabels);
+          console.log('Candidatures:', d.meta.totalCandidatures);
+          if (d.sessions.length !== 85) process.exit(1);
+          if (d.meta.totalLabels !== 1311) process.exit(1);
+          if (d.meta.totalPreLabels !== 623) process.exit(1);
+          console.log('✅ Data validation passed');
+          "
+
+      - name: Server syntax check
+        run: node --check server.cjs
