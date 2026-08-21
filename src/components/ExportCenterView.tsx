@@ -54,6 +54,19 @@ import { KPI_CATALOG } from '../data/kpiCatalog';
 import { SessionData } from '../types';
 import { ComprehensivePDFReportsModal, ReportType } from './ComprehensivePDFReportsModal';
 
+
+/**
+ * Download a static file from public/data/
+ */
+const downloadStaticFile = (path: string, filename: string) => {
+  const a = document.createElement('a');
+  a.href = `/data/${path}`;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+};
+
 export const ExportCenterView: React.FC = () => {
   const [selectedSessionCode, setSelectedSessionCode] = useState<string>(SESSIONS_LIST[SESSIONS_LIST.length - 1]?.session || '03/2026');
   const [copiedSql, setCopiedSql] = useState(false);
@@ -758,6 +771,127 @@ export const ExportCenterView: React.FC = () => {
           </div>
         </div>
       </div>
+
+
+      {/* SECTION 5: FICHIERS STATIQUES MANUS — Données Normalisées */}
+      <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-3xl border border-slate-200 p-6 sm:p-7 shadow-soft space-y-5">
+        <div>
+          <h3 className="text-base sm:text-lg font-black text-slate-900 flex items-center space-x-2">
+            <Layers className="w-5 h-5 text-blue-600" />
+            <span>Base Normalisée &amp; Fichiers Statiques (Manus)</span>
+          </h3>
+          <p className="text-xs text-slate-500 mt-0.5">
+            Fichiers générés depuis l'Excel fusionné de 85 sessions. SQL normalisé (6 tables, 3 348 décisions), CSVs géographiques, rapports académiques et figures.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* SQL Normalized */}
+          <div className="p-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 transition-colors flex flex-col justify-between space-y-3">
+            <div>
+              <span className="text-xs font-bold text-slate-900">Base SQL Normalisée</span>
+              <p className="text-[11px] text-slate-500 mt-1">6 tables : sessions, companies, founders, company_founders, decisions, quality_flags — 12 877 INSERTs</p>
+            </div>
+            <button
+              onClick={() => downloadStaticFile('exports/startup_act_database.sql', 'startup_act_database.sql')}
+              className="py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-bold flex items-center justify-center space-x-1.5 transition-colors cursor-pointer shadow-2xs"
+            >
+              <Database className="w-3.5 h-3.5" />
+              <span>Télécharger SQL</span>
+            </button>
+          </div>
+
+          {/* Normalized JSON */}
+          <div className="p-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 transition-colors flex flex-col justify-between space-y-3">
+            <div>
+              <span className="text-xs font-bold text-slate-900">Base JSON Normalisée</span>
+              <p className="text-[11px] text-slate-500 mt-1">Même structure que SQL, format JSON pour intégration API/JavaScript</p>
+            </div>
+            <button
+              onClick={() => downloadStaticFile('exports/startup_act_database_normalized.json', 'startup_act_database_normalized.json')}
+              className="py-2 bg-slate-800 hover:bg-slate-900 text-white rounded-xl text-xs font-bold flex items-center justify-center space-x-1.5 transition-colors cursor-pointer shadow-2xs"
+            >
+              <FileCode className="w-3.5 h-3.5 text-cyan-400" />
+              <span>Télécharger JSON</span>
+            </button>
+          </div>
+
+          {/* Excel 85 Sessions */}
+          <div className="p-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 transition-colors flex flex-col justify-between space-y-3">
+            <div>
+              <span className="text-xs font-bold text-slate-900">Excel 85 Sessions Corrigées</span>
+              <p className="text-[11px] text-slate-500 mt-1">91 feuilles : Synthèse, Compteurs, S0–S84, Passages, Retraits, Audit</p>
+            </div>
+            <button
+              onClick={() => downloadStaticFile('exports/Faker85session_corrigee_compteurs_officiels.xlsx', 'Faker85session_85_sessions.xlsx')}
+              className="py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold flex items-center justify-center space-x-1.5 transition-colors cursor-pointer shadow-2xs"
+            >
+              <FileSpreadsheet className="w-3.5 h-3.5" />
+              <span>Télécharger Excel</span>
+            </button>
+          </div>
+
+          {/* Excel Fondateurs */}
+          <div className="p-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 transition-colors flex flex-col justify-between space-y-3">
+            <div>
+              <span className="text-xs font-bold text-slate-900">Excel Startups &amp; Fondateurs</span>
+              <p className="text-[11px] text-slate-500 mt-1">91 feuilles : Sessions, Entreprises, Fondateurs, Décisions normalisées</p>
+            </div>
+            <button
+              onClick={() => downloadStaticFile('exports/Startup_Act_85_sessions_fondateurs_complet.xlsx', 'Startup_Act_startups_fondateurs.xlsx')}
+              className="py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold flex items-center justify-center space-x-1.5 transition-colors cursor-pointer shadow-2xs"
+            >
+              <FileSpreadsheet className="w-3.5 h-3.5" />
+              <span>Télécharger Excel</span>
+            </button>
+          </div>
+
+          {/* CSV Géographie */}
+          <div className="p-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 transition-colors flex flex-col justify-between space-y-3">
+            <div>
+              <span className="text-xs font-bold text-slate-900">CSVs Géographiques</span>
+              <p className="text-[11px] text-slate-500 mt-1">2 fichiers : répartition régionale (2019–2021) + internationalisation</p>
+            </div>
+            <div className="flex space-x-2">
+              <button
+                onClick={() => downloadStaticFile('exports/geographie_startups_2019_2021.csv', 'geographie_startups.csv')}
+                className="flex-1 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-xl text-xs font-bold flex items-center justify-center space-x-1 transition-colors cursor-pointer shadow-2xs"
+              >
+                <span>Régions</span>
+              </button>
+              <button
+                onClick={() => downloadStaticFile('exports/geographie_international_2019_2021.csv', 'geographie_international.csv')}
+                className="flex-1 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-xl text-xs font-bold flex items-center justify-center space-x-1 transition-colors cursor-pointer shadow-2xs"
+              >
+                <span>International</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Rapport Académique */}
+          <div className="p-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 transition-colors flex flex-col justify-between space-y-3">
+            <div>
+              <span className="text-xs font-bold text-slate-900">Rapport Académique</span>
+              <p className="text-[11px] text-slate-500 mt-1">Étude quantitative complète + métriques + sources + 5 figures PNG</p>
+            </div>
+            <div className="flex space-x-2">
+              <button
+                onClick={() => downloadStaticFile('rapport_academique/academic_metrics.json', 'academic_metrics.json')}
+                className="flex-1 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-xl text-xs font-bold flex items-center justify-center space-x-1 transition-colors cursor-pointer shadow-2xs"
+              >
+                <span>Métriques</span>
+              </button>
+              <button
+                onClick={() => downloadStaticFile('rapport_academique/research_sources.md', 'research_sources.md')}
+                className="flex-1 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-xl text-xs font-bold flex items-center justify-center space-x-1 transition-colors cursor-pointer shadow-2xs"
+              >
+                <span>Sources</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       {/* Comprehensive PDF Report Modal */}
       {isPDFModalOpen && (
